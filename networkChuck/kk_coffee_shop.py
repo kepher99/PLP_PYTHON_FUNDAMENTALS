@@ -6,10 +6,11 @@ print("Hello, welcome KK coffee shop!!!!")
 #Ask your customer their name with the input()function and store in the variable NAME.
 name = input("What is your name?\n")
 
-if name == "Ben":
+if name == "Ben" or name == "Patricia" or name == "Loki":
   evil_status = input("Are you evil?\n")
-  if evil_status == "yes":
-    print("You're not welcome here Evil Ben!! Get out!!")
+  good_deeds = int(input("How many good deeds have you done today?\n"))
+  if evil_status == "yes" and good_deeds < 4:
+    print("You're not welcome here " + name + ". Get out of here!!")
     exit()
   else:
     print("Oh , so you are one of those good Bens. Come on in!!")
